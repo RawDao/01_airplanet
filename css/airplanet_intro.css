@@ -1,0 +1,55 @@
+﻿/*==========  airplanet_intro.css 2018_03_01 global style  ==========*/
+
+html{
+	height: 100%;
+	background: #fff url("../images/intro/intro__background.jpg") center center no-repeat fixed;
+	background-size: auto auto; 
+}
+
+body{
+	height: 100%;
+	font: normal 16px Arial, sans-serif;
+}
+
+/*==========  main style  ==========*/
+
+.main{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.main__logo{
+	width: 111px;
+	height: 185px;
+	margin-bottom: 40px;
+	transition: all 0.4s;
+}
+
+.main__logo:hover{
+	transform: scale(1.2);	
+}
+
+.main__button{
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 12px;
+	font-weight: bold;	
+	color: #1c5bc4;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: url("../images/intro/intro__main_normal.png") 148px 50% no-repeat;	
+	padding: 16px 56px 16px 20px;
+	border: 1px solid #1c5bc4;
+	border-radius: 4px;
+}
+
+.main__button:hover{
+	color: #fff;	
+	background: #1c5bc4 url("../images/intro/intro__main_hover.png") 148px 50% no-repeat;
+	
+}

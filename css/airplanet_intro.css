@@ -1,19 +1,49 @@
 ﻿/*==========  airplanet_intro.css 2018_03_01 global style  ==========*/
 
-html{
+@font-face{
+	font-family: "roboto-light";
+	src: url('../fonts/roboto-light_1-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/roboto-light_1-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+	     url('../fonts/roboto-light_1-webfont.woff') format('woff'); /* Pretty Modern Browsers */       
+}
+
+@font-face{
+  	font-family: "roboto-lightitalic";
+  	src: url('../fonts/roboto-lightitalic_1-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../fonts/roboto-lightitalic_1-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-lightitalic_1-webfont.woff') format('woff'); /* Pretty Modern Browsers */       
+}
+
+@font-face{
+  	font-family: "roboto-bold";
+  	src: url('../fonts/roboto-bold_1-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('../fonts/roboto-bold_1-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-bold_1-webfont.woff') format('woff'); /* Pretty Modern Browsers */       
+}
+
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+html{	
 	height: 100%;
-	background: #fff url("../images/intro/intro__background.jpg") center center no-repeat fixed;
+	background: #fff url('../images/intro/intro__background.jpg') center center no-repeat fixed;
 	background-size: auto auto; 
 }
 
-body{
+body{	
 	height: 100%;
-	font: normal 16px Arial, sans-serif;
+	font: normal 16px 'roboto-light', sans-serif;
 }
 
 /*==========  main style  ==========*/
 
-.main{
+.main{	
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -37,8 +67,7 @@ body{
 .main__button{
 	display: inline-block;
 	margin: 0 auto;
-	font-size: 12px;
-	font-weight: bold;	
+	font: bold 12px 'roboto-bold';	
 	color: #1c5bc4;
 	text-decoration: none;
 	text-transform: uppercase;
